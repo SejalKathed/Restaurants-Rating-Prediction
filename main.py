@@ -124,7 +124,7 @@ def predict_result():
         costfor2=float(request.form.get('costfor2'))
 
         parameters={'online_order':online_order,'book_table':book_table,'MealType':MealType,'votes':votes,'costfor2':costfor2}
-        response = requests.get("https://restaurantratingpredictionapp.herokuapp.com/api/predict", params=parameters,allow_redirects=True,)
+        response = requests.get("https://restaurantsratingprediction.herokuapp.com/api/predict", params=parameters,allow_redirects=True,)
         rating=response.text
         rating=rating.replace("{","")
         rating=rating.replace("}","")
