@@ -31,7 +31,7 @@
 
         "URL for API endpoint":{
             "type":"GET",
-            "URL":"https://restaurantratingpredictionapp.herokuapp.com/api/predict/"
+            "URL":"https://restaurantsratingprediction.herokuapp.com/api/predict/"
             
         }
 
