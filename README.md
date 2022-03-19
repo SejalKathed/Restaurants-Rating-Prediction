@@ -8,7 +8,7 @@ various Zomato Restaurants to predict their respective Ratings based on certain
 features.
 
 [You can reach the application here] 
-[https://restaurantratingpredictionapp.herokuapp.com/](https://restaurantratingpredictionapp.herokuapp.com/)
+[https://restaurantsratingprediction.herokuapp.com/](https://restaurantsratingprediction.herokuapp.com/)
 
 
 # Problem statement
@@ -59,7 +59,7 @@ mostly vegetarian. These kind of analysis can be done using the data, by studyin
 ```python
 import requests
 parameters={'online_order':"Yes",'book_table':"Yes",'MealType':"Buffet",'votes':775,'costfor2':800}
-response = requests.get("https://restaurantratingpredictionapp.herokuapp.com/api/predict", params=parameters)
+response = requests.get("https://restaurantsratingprediction.herokuapp.com/api/predict", params=parameters)
 rating=response.text
 print(rating)
 
